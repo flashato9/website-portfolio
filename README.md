@@ -1,5 +1,7 @@
 # WebsitePortfolio
 
+This is my current website portfolio
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
 
 ## Development server
