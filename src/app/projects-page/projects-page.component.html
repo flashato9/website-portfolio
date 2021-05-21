@@ -1,0 +1,42 @@
+<navigation-menu [navUnderlineColor]="this.linkHoverColor"></navigation-menu>
+<main>
+  <article>
+    <!-- <ngb-carousel
+      #carousel
+      [interval]="20000"
+      [pauseOnHover]="true"
+      [pauseOnFocus]="true"
+    >
+      <ng-template ngbSlide *ngFor="let img of images">
+        <div class="carousel-caption">
+          <h3>{{ img.header }}</h3>
+          <p>{{ img.description }}</p>
+        </div>
+        <a href="">
+          <div class="picsum-img-wrapper">
+            <img [src]="img.url" alt="img.description" />
+          </div>
+        </a>
+      </ng-template>
+    </ngb-carousel> -->
+    <swiper
+      [pagination]="{
+        type: 'bullets'
+      }"
+      [navigation]="true"
+      id="mySwiper"
+    >
+      <ng-template swiperSlide id="slide-1">
+        <img [src]="this.images[0].url" alt="this.images[0].description" />
+        <div id="text-content">
+          <h1>{{ this.images[0].header }}</h1>
+          <p>
+            {{ this.images[0].description }}
+          </p>
+        </div>
+      </ng-template>
+    </swiper>
+  </article>
+</main>
+
+<contact-menu [linkHoverColor]="this.linkHoverColor"></contact-menu>

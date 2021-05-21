@@ -1,0 +1,24 @@
+<header [style.--underline-color]="this.navUnderlineColor">
+  <button
+    (click)="this.toggleNavMenu($event)"
+    *ngIf="this.mobileWidthReached$ | async"
+    mat-raised-button
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <nav
+    id="navigation"
+    *ngIf="this.navOpen || !(this.mobileWidthReached$ | async)"
+  >
+    <ul>
+      <li>
+        <a routerLink="/home" routerLinkActive="active-link"> Home </a>
+      </li>
+      <li><a routerLink="/about" routerLinkActive="active-link">About</a></li>
+      <li>
+        <a routerLink="/projects" routerLinkActive="active-link">Projects</a>
+      </li>
+      <li><a routerLink="/about" fragment="contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
