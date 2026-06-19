@@ -20,6 +20,11 @@ export class ProjectsPageComponent implements OnInit {
       description: 'The website was built using angular web framework.',
       url: '../../assets/projects-page/carousel/website-portfolio.PNG',
     },
+    {
+      header: 'Semantic OS Desktop',
+      description: 'Imagine a computer that finally speaks human.',
+      url: '../../assets/projects-page/carousel/semantic-os-desktop.png',
+    },
   ];
 
   constructor() {}

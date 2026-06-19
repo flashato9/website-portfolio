@@ -4,6 +4,11 @@ This is my current website portfolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
 
+## Install Dependencies
+
+Run ` npm install -g @angular/cli` to install angular globally
+Run ` npm install` to install local dependencies
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

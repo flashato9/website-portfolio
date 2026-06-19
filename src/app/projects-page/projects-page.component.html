@@ -35,6 +35,15 @@
           </p>
         </div>
       </ng-template>
+      <ng-template swiperSlide id="slide-1">
+        <img [src]="this.images[1].url" alt="this.images[1].description" />
+        <div id="text-content">
+          <h1>{{ this.images[1].header }}</h1>
+          <p >
+            {{ this.images[1].description }}
+          </p>
+        </div>
+      </ng-template>
     </swiper>
   </article>
 </main>
